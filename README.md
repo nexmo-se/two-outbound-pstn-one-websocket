@@ -2,22 +2,22 @@
 
 ## Set up
 
-Copy or rename .env-example to .env
-Update parameters in .env file
-Have Node.js installed on your system, this application has been tested with Node.js version 16.15
-Install node modules with the command "npm install"
-Start application with the command "node pstn-websocket"
+Copy or rename .env-example to .env<br>
+Update parameters in .env file<br>
+Have Node.js installed on your system, this application has been tested with Node.js version 16.15<br>
+Install node modules with the command "npm install"<br>
+Start application with the command "node pstn-websocket"<br>
 
 ## How this application works
 
-1- Establish WebSocket, drop in a named conference
+1- Establish WebSocket, drop in a named conference<br>
 (WebSocket server middleware running the application named websocket-server.js)
 
 2- Establish 1st outbound PSTN call
 
 3a- Once 1st outbound PSTN call has been answered, drop into same named conference
 
-3b- Immediately send a DTMF via the WebSocket so the middleware WebSocket server knows that the PSTN call is live, for example to play a greeting
+3b- Immediately send a DTMF via the WebSocket so the middleware WebSocket server knows that the PSTN call is live, for example to play a greeting<br>
 At the same time, in the other direction, this WebSocket receives audio from the PSTN call from the very beginning of the answered PSTN call
 
 4- In actual application logic, the 1st participant (on the 1st PSTN call) interacts with the voice bot (served by the middleware WebSocket server)
