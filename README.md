@@ -36,3 +36,9 @@ At the same time, in the other direction, this WebSocket receives audio from the
 8b- Stop MoH on 1st PSTN call leg
 
 8c- Both PSTN legs and the WebSocket leg are now in this 3-way conference call and can hear and speak to each other
+
+## To trigger the first PSTN oubound call
+
+From a web browser, access:</br>
+
+https://<address_of_server_running_this_code>/startcall
