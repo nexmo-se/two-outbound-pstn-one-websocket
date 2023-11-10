@@ -19,7 +19,7 @@ from repository https://github.com/nexmo-se/websocket-server
 
 3a- Once 1st outbound PSTN call has been answered, drop into same named conference
 
-3b- Immediately send a DTMF via the WebSocket so the middleware WebSocket server knows that the PSTN call is live, for example to play a greeting<br>
+3b- Immediately send a DTMF via the WebSocket so the middleware WebSocket server knows that the PSTN call is live, for example to play a greeting. This is the equivalent of an "in-band" signaling that does not need external signaling such as webhooks<br>
 At the same time, in the other direction, this WebSocket receives audio from the PSTN call from the very beginning of the answered PSTN call
 
 4- In actual application logic, the 1st participant (on the 1st PSTN call) interacts with the voice bot (served by the middleware WebSocket server)
