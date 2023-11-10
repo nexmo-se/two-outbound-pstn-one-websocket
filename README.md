@@ -11,7 +11,7 @@ Start application with the command "node pstn-websocket"<br>
 ## How this application works
 
 1- Establish WebSocket, drop in a named conference<br>
-(WebSocket server middleware running the application named websocket-server.js)<br>
+(This Voice API application needs a WebSocket server middleware running the application named websocket-server.js)<br>
 from repository https://github.com/nexmo-se/websocket-server
 
 2- Establish 1st outbound PSTN call
