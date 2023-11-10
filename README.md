@@ -7,12 +7,13 @@ Update parameters in .env file<br>
 Have Node.js installed on your system, this application has been tested with Node.js version 16.15<br>
 Install node modules with the command "npm install"<br>
 Start application with the command "node pstn-websocket"<br>
+--
+This Voice API application needs a WebSocket server middleware running the application named websocket-server.js)
+from repository https://github.com/nexmo-se/websocket-server
 
 ## How this application works
 
 1- Establish WebSocket, drop in a named conference<br>
-(This Voice API application needs a WebSocket server middleware running the application named websocket-server.js)<br>
-from repository https://github.com/nexmo-se/websocket-server
 
 2- Establish 1st outbound PSTN call
 
